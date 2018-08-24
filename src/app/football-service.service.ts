@@ -38,6 +38,7 @@ constructor(public http:HttpClient) {
   this.Footballerslist.push({id:19,name:"Fred",position:"MF",rating:4,value : 41.1}); 
   this.Footballerslist.push({id:20,name:"Fred",position:"MF",rating:4,value : 41.1}); 
   this.Footballerslist.push({id:21,name:"Fred1",position:"MF",rating:4,value : 41.1}); 
+  this.Footballerslist.push({id:22,name:"Fred2",position:"MF",rating:4,value : 41.1}); 
 
   // add comment
 
