@@ -1,0 +1,1114 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Windows 8.0.0)" package="" timestamp="2018-08-29T09:47:22" id="0" hostname="SharayuS-MSD" tests="6" errors="0" failures="5" time="1.532">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.367" classname="PhantomJS_2_1_1_(Windows_8_0_0).AppComponent">
+    <failure type="">Failed: Template parse errors:
+Can't bind to 'ngModel' since it isn't a known property of 'mat-select'.
+1. If 'mat-select' is an Angular component and it has 'ngModel' input, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+
+ &lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [ERROR -&gt;][(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFo"): ng:///DynamicTestModule/FootballersListComponent.html@5:38
+Can't bind to 'value' since it isn't a known property of 'mat-option'.
+1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFor="let filter of filters" [ERROR -&gt;][value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat-option&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@6:49
+'mat-option' is not a known element:
+1. If 'mat-option' is an Angular component, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("older="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      [ERROR -&gt;]&lt;mat-option *ngFor="let filter of filters" [value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat"): ng:///DynamicTestModule/FootballersListComponent.html@6:6
+'mat-select' is not a known element:
+1. If 'mat-select' is an Angular component, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+ &lt;mat-form-field&gt;
+    [ERROR -&gt;]&lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterC"): ng:///DynamicTestModule/FootballersListComponent.html@5:4
+'mat-form-field' is not a known element:
+1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+
+ [ERROR -&gt;]&lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (sele"): ng:///DynamicTestModule/FootballersListComponent.html@4:1
+Can't bind to 'dataSource' since it isn't a known property of 'table'. ("
+
+&lt;div class="mat-elevation-z8"&gt;
+  &lt;table mat-table #table [ERROR -&gt;][dataSource]="dataSource"&gt;
+   
+ &lt;ng-container matColumnDef="id"&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@14:26
+The pipe 'ratingPipe' could not be found ("ment"&gt;   
+    &lt;ng-template ngFor let-item [ngForOf]="createRange(element.rating)" &gt;
+      &lt;span  cla[ERROR -&gt;]ss="{{ element.rating | ratingPipe}}" &gt;star &lt;/span&gt;
+
+    &lt;/ng-template&gt;&lt;/td&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@41:16
+Can't bind to 'matHeaderRowDef' since it isn't a known property of 'tr'. ("
+  &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row [ERROR -&gt;]*matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColu"): ng:///DynamicTestModule/FootballersListComponent.html@67:23
+Property binding matHeaderRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+  &lt;/ng-container&gt;
+
+    [ERROR -&gt;]&lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; col"): ng:///DynamicTestModule/FootballersListComponent.html@67:4
+Can't bind to 'matRowDefColumns' since it isn't a known property of 'tr'. ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row [ERROR -&gt;]*matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterRowDef="displ"): ng:///DynamicTestModule/FootballersListComponent.html@68:16
+Property binding matRowDefColumns not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterR"): ng:///DynamicTestModule/FootballersListComponent.html@68:4
+Can't bind to 'matFooterRowDef' since it isn't a known property of 'tr'. ("&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row [ERROR -&gt;]*matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:23
+Property binding matFooterRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". (""displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-footer-row *matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:4
+Can't bind to 'pageSizeOptions' since it isn't a known property of 'mat-paginator'.
+1. If 'mat-paginator' is an Angular component and it has 'pageSizeOptions' input, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+ 
+  &lt;/table&gt;
+  &lt;mat-paginator [ERROR -&gt;][pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:17
+'mat-paginator' is not a known element:
+1. If 'mat-paginator' is an Angular component, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+ 
+  &lt;/table&gt;
+  [ERROR -&gt;]&lt;mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:2
+parse@http://localhost:9876/_karma_webpack_/vendor.js:44208:80
+_parseTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53395:42
+_compileTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53382:37
+http://localhost:9876/_karma_webpack_/vendor.js:53325:78
+forEach@http://localhost:9876/_karma_webpack_/vendor.js:121201:12
+_compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:53325:26
+http://localhost:9876/_karma_webpack_/vendor.js:53243:37
+then@http://localhost:9876/_karma_webpack_/vendor.js:30402:79
+_compileModuleAndAllComponents@http://localhost:9876/_karma_webpack_/vendor.js:53241:30
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:53200:67
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:116653:65
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:117217:65
+compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:74367:65
+compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:74226:84
+http://localhost:9876/_karma_webpack_/main.js:242:29
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138831:45
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138403:47
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+runGuarded@http://localhost:9876/_karma_webpack_/vendor.js:139859:53
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138959:39
+http://localhost:9876/_karma_webpack_/vendor.js:138893:30
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138624:37
+http://localhost:9876/_karma_webpack_/vendor.js:138640:33
+execute@http://localhost:9876/_karma_webpack_/vendor.js:138732:46
+execute@http://localhost:9876/_karma_webpack_/vendor.js:138732:46
+http://localhost:9876/_karma_webpack_/vendor.js:138729:134
+invokeTask@http://localhost:9876/_karma_webpack_/vendor.js:140129:36
+runTask@http://localhost:9876/_karma_webpack_/vendor.js:139896:57
+drainMicroTaskQueue@http://localhost:9876/_karma_webpack_/vendor.js:140303:42
+invokeTask@http://localhost:9876/_karma_webpack_/vendor.js:140208:40
+invokeTask@http://localhost:9876/_karma_webpack_/vendor.js:141248:20
+globalZoneAwareCaptureCallback@http://localhost:9876/_karma_webpack_/vendor.js:141306:27
+</failure>
+    <failure type="">Failed: Template parse errors:
+Can't bind to 'ngModel' since it isn't a known property of 'mat-select'.
+1. If 'mat-select' is an Angular component and it has 'ngModel' input, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+
+ &lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [ERROR -&gt;][(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFo"): ng:///DynamicTestModule/FootballersListComponent.html@5:38
+Can't bind to 'value' since it isn't a known property of 'mat-option'.
+1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFor="let filter of filters" [ERROR -&gt;][value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat-option&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@6:49
+'mat-option' is not a known element:
+1. If 'mat-option' is an Angular component, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("older="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      [ERROR -&gt;]&lt;mat-option *ngFor="let filter of filters" [value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat"): ng:///DynamicTestModule/FootballersListComponent.html@6:6
+'mat-select' is not a known element:
+1. If 'mat-select' is an Angular component, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+ &lt;mat-form-field&gt;
+    [ERROR -&gt;]&lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterC"): ng:///DynamicTestModule/FootballersListComponent.html@5:4
+'mat-form-field' is not a known element:
+1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+
+ [ERROR -&gt;]&lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (sele"): ng:///DynamicTestModule/FootballersListComponent.html@4:1
+Can't bind to 'dataSource' since it isn't a known property of 'table'. ("
+
+&lt;div class="mat-elevation-z8"&gt;
+  &lt;table mat-table #table [ERROR -&gt;][dataSource]="dataSource"&gt;
+   
+ &lt;ng-container matColumnDef="id"&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@14:26
+The pipe 'ratingPipe' could not be found ("ment"&gt;   
+    &lt;ng-template ngFor let-item [ngForOf]="createRange(element.rating)" &gt;
+      &lt;span  cla[ERROR -&gt;]ss="{{ element.rating | ratingPipe}}" &gt;star &lt;/span&gt;
+
+    &lt;/ng-template&gt;&lt;/td&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@41:16
+Can't bind to 'matHeaderRowDef' since it isn't a known property of 'tr'. ("
+  &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row [ERROR -&gt;]*matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColu"): ng:///DynamicTestModule/FootballersListComponent.html@67:23
+Property binding matHeaderRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+  &lt;/ng-container&gt;
+
+    [ERROR -&gt;]&lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; col"): ng:///DynamicTestModule/FootballersListComponent.html@67:4
+Can't bind to 'matRowDefColumns' since it isn't a known property of 'tr'. ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row [ERROR -&gt;]*matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterRowDef="displ"): ng:///DynamicTestModule/FootballersListComponent.html@68:16
+Property binding matRowDefColumns not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterR"): ng:///DynamicTestModule/FootballersListComponent.html@68:4
+Can't bind to 'matFooterRowDef' since it isn't a known property of 'tr'. ("&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row [ERROR -&gt;]*matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:23
+Property binding matFooterRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". (""displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-footer-row *matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:4
+Can't bind to 'pageSizeOptions' since it isn't a known property of 'mat-paginator'.
+1. If 'mat-paginator' is an Angular component and it has 'pageSizeOptions' input, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+ 
+  &lt;/table&gt;
+  &lt;mat-paginator [ERROR -&gt;][pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:17
+'mat-paginator' is not a known element:
+1. If 'mat-paginator' is an Angular component, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+ 
+  &lt;/table&gt;
+  [ERROR -&gt;]&lt;mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:2
+parse@http://localhost:9876/_karma_webpack_/vendor.js:44208:80
+_parseTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53395:42
+_compileTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53382:37
+http://localhost:9876/_karma_webpack_/vendor.js:53325:78
+forEach@http://localhost:9876/_karma_webpack_/vendor.js:121201:12
+_compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:53325:26
+http://localhost:9876/_karma_webpack_/vendor.js:53243:37
+then@http://localhost:9876/_karma_webpack_/vendor.js:30402:79
+_compileModuleAndAllComponents@http://localhost:9876/_karma_webpack_/vendor.js:53241:30
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:53197:72
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:116646:70
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:117214:64
+_initIfNeeded@http://localhost:9876/_karma_webpack_/vendor.js:74381:69
+createComponent@http://localhost:9876/_karma_webpack_/vendor.js:74577:27
+createComponent@http://localhost:9876/_karma_webpack_/vendor.js:74270:44
+http://localhost:9876/_karma_webpack_/main.js:245:56
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138831:45
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138403:47
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+runGuarded@http://localhost:9876/_karma_webpack_/vendor.js:139859:53
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138959:39
+http://localhost:9876/_karma_webpack_/vendor.js:138893:30
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138624:37
+http://localhost:9876/_karma_webpack_/vendor.js:138640:33
+</failure>
+  </testcase>
+  <testcase name="AppComponent should have as title 'app'" time="0.378" classname="PhantomJS_2_1_1_(Windows_8_0_0).AppComponent">
+    <failure type="">Failed: Template parse errors:
+Can't bind to 'ngModel' since it isn't a known property of 'mat-select'.
+1. If 'mat-select' is an Angular component and it has 'ngModel' input, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+
+ &lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [ERROR -&gt;][(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFo"): ng:///DynamicTestModule/FootballersListComponent.html@5:38
+Can't bind to 'value' since it isn't a known property of 'mat-option'.
+1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFor="let filter of filters" [ERROR -&gt;][value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat-option&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@6:49
+'mat-option' is not a known element:
+1. If 'mat-option' is an Angular component, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("older="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      [ERROR -&gt;]&lt;mat-option *ngFor="let filter of filters" [value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat"): ng:///DynamicTestModule/FootballersListComponent.html@6:6
+'mat-select' is not a known element:
+1. If 'mat-select' is an Angular component, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+ &lt;mat-form-field&gt;
+    [ERROR -&gt;]&lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterC"): ng:///DynamicTestModule/FootballersListComponent.html@5:4
+'mat-form-field' is not a known element:
+1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+
+ [ERROR -&gt;]&lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (sele"): ng:///DynamicTestModule/FootballersListComponent.html@4:1
+Can't bind to 'dataSource' since it isn't a known property of 'table'. ("
+
+&lt;div class="mat-elevation-z8"&gt;
+  &lt;table mat-table #table [ERROR -&gt;][dataSource]="dataSource"&gt;
+   
+ &lt;ng-container matColumnDef="id"&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@14:26
+The pipe 'ratingPipe' could not be found ("ment"&gt;   
+    &lt;ng-template ngFor let-item [ngForOf]="createRange(element.rating)" &gt;
+      &lt;span  cla[ERROR -&gt;]ss="{{ element.rating | ratingPipe}}" &gt;star &lt;/span&gt;
+
+    &lt;/ng-template&gt;&lt;/td&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@41:16
+Can't bind to 'matHeaderRowDef' since it isn't a known property of 'tr'. ("
+  &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row [ERROR -&gt;]*matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColu"): ng:///DynamicTestModule/FootballersListComponent.html@67:23
+Property binding matHeaderRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+  &lt;/ng-container&gt;
+
+    [ERROR -&gt;]&lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; col"): ng:///DynamicTestModule/FootballersListComponent.html@67:4
+Can't bind to 'matRowDefColumns' since it isn't a known property of 'tr'. ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row [ERROR -&gt;]*matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterRowDef="displ"): ng:///DynamicTestModule/FootballersListComponent.html@68:16
+Property binding matRowDefColumns not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterR"): ng:///DynamicTestModule/FootballersListComponent.html@68:4
+Can't bind to 'matFooterRowDef' since it isn't a known property of 'tr'. ("&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row [ERROR -&gt;]*matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:23
+Property binding matFooterRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". (""displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-footer-row *matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:4
+Can't bind to 'pageSizeOptions' since it isn't a known property of 'mat-paginator'.
+1. If 'mat-paginator' is an Angular component and it has 'pageSizeOptions' input, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+ 
+  &lt;/table&gt;
+  &lt;mat-paginator [ERROR -&gt;][pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:17
+'mat-paginator' is not a known element:
+1. If 'mat-paginator' is an Angular component, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+ 
+  &lt;/table&gt;
+  [ERROR -&gt;]&lt;mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:2
+parse@http://localhost:9876/_karma_webpack_/vendor.js:44208:80
+_parseTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53395:42
+_compileTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53382:37
+http://localhost:9876/_karma_webpack_/vendor.js:53325:78
+forEach@http://localhost:9876/_karma_webpack_/vendor.js:121201:12
+_compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:53325:26
+http://localhost:9876/_karma_webpack_/vendor.js:53243:37
+then@http://localhost:9876/_karma_webpack_/vendor.js:30402:79
+_compileModuleAndAllComponents@http://localhost:9876/_karma_webpack_/vendor.js:53241:30
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:53200:67
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:116653:65
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:117217:65
+compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:74367:65
+compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:74226:84
+http://localhost:9876/_karma_webpack_/main.js:242:29
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138831:45
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138403:47
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+runGuarded@http://localhost:9876/_karma_webpack_/vendor.js:139859:53
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138959:39
+http://localhost:9876/_karma_webpack_/vendor.js:138893:30
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138624:37
+http://localhost:9876/_karma_webpack_/vendor.js:138640:33
+execute@http://localhost:9876/_karma_webpack_/vendor.js:138732:46
+invokeTask@http://localhost:9876/_karma_webpack_/vendor.js:140129:36
+runTask@http://localhost:9876/_karma_webpack_/vendor.js:139896:57
+drainMicroTaskQueue@http://localhost:9876/_karma_webpack_/vendor.js:140303:42
+</failure>
+    <failure type="">Failed: Template parse errors:
+Can't bind to 'ngModel' since it isn't a known property of 'mat-select'.
+1. If 'mat-select' is an Angular component and it has 'ngModel' input, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+
+ &lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [ERROR -&gt;][(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFo"): ng:///DynamicTestModule/FootballersListComponent.html@5:38
+Can't bind to 'value' since it isn't a known property of 'mat-option'.
+1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFor="let filter of filters" [ERROR -&gt;][value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat-option&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@6:49
+'mat-option' is not a known element:
+1. If 'mat-option' is an Angular component, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("older="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      [ERROR -&gt;]&lt;mat-option *ngFor="let filter of filters" [value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat"): ng:///DynamicTestModule/FootballersListComponent.html@6:6
+'mat-select' is not a known element:
+1. If 'mat-select' is an Angular component, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+ &lt;mat-form-field&gt;
+    [ERROR -&gt;]&lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterC"): ng:///DynamicTestModule/FootballersListComponent.html@5:4
+'mat-form-field' is not a known element:
+1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+
+ [ERROR -&gt;]&lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (sele"): ng:///DynamicTestModule/FootballersListComponent.html@4:1
+Can't bind to 'dataSource' since it isn't a known property of 'table'. ("
+
+&lt;div class="mat-elevation-z8"&gt;
+  &lt;table mat-table #table [ERROR -&gt;][dataSource]="dataSource"&gt;
+   
+ &lt;ng-container matColumnDef="id"&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@14:26
+The pipe 'ratingPipe' could not be found ("ment"&gt;   
+    &lt;ng-template ngFor let-item [ngForOf]="createRange(element.rating)" &gt;
+      &lt;span  cla[ERROR -&gt;]ss="{{ element.rating | ratingPipe}}" &gt;star &lt;/span&gt;
+
+    &lt;/ng-template&gt;&lt;/td&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@41:16
+Can't bind to 'matHeaderRowDef' since it isn't a known property of 'tr'. ("
+  &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row [ERROR -&gt;]*matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColu"): ng:///DynamicTestModule/FootballersListComponent.html@67:23
+Property binding matHeaderRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+  &lt;/ng-container&gt;
+
+    [ERROR -&gt;]&lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; col"): ng:///DynamicTestModule/FootballersListComponent.html@67:4
+Can't bind to 'matRowDefColumns' since it isn't a known property of 'tr'. ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row [ERROR -&gt;]*matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterRowDef="displ"): ng:///DynamicTestModule/FootballersListComponent.html@68:16
+Property binding matRowDefColumns not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterR"): ng:///DynamicTestModule/FootballersListComponent.html@68:4
+Can't bind to 'matFooterRowDef' since it isn't a known property of 'tr'. ("&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row [ERROR -&gt;]*matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:23
+Property binding matFooterRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". (""displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-footer-row *matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:4
+Can't bind to 'pageSizeOptions' since it isn't a known property of 'mat-paginator'.
+1. If 'mat-paginator' is an Angular component and it has 'pageSizeOptions' input, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+ 
+  &lt;/table&gt;
+  &lt;mat-paginator [ERROR -&gt;][pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:17
+'mat-paginator' is not a known element:
+1. If 'mat-paginator' is an Angular component, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+ 
+  &lt;/table&gt;
+  [ERROR -&gt;]&lt;mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:2
+parse@http://localhost:9876/_karma_webpack_/vendor.js:44208:80
+_parseTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53395:42
+_compileTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53382:37
+http://localhost:9876/_karma_webpack_/vendor.js:53325:78
+forEach@http://localhost:9876/_karma_webpack_/vendor.js:121201:12
+_compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:53325:26
+http://localhost:9876/_karma_webpack_/vendor.js:53243:37
+then@http://localhost:9876/_karma_webpack_/vendor.js:30402:79
+_compileModuleAndAllComponents@http://localhost:9876/_karma_webpack_/vendor.js:53241:30
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:53197:72
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:116646:70
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:117214:64
+_initIfNeeded@http://localhost:9876/_karma_webpack_/vendor.js:74381:69
+createComponent@http://localhost:9876/_karma_webpack_/vendor.js:74577:27
+createComponent@http://localhost:9876/_karma_webpack_/vendor.js:74270:44
+http://localhost:9876/_karma_webpack_/main.js:250:56
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138831:45
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138403:47
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+runGuarded@http://localhost:9876/_karma_webpack_/vendor.js:139859:53
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138959:39
+http://localhost:9876/_karma_webpack_/vendor.js:138893:30
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138624:37
+http://localhost:9876/_karma_webpack_/vendor.js:138640:33
+</failure>
+  </testcase>
+  <testcase name="AppComponent should render title in a h1 tag" time="0.356" classname="PhantomJS_2_1_1_(Windows_8_0_0).AppComponent">
+    <failure type="">Failed: Template parse errors:
+Can't bind to 'ngModel' since it isn't a known property of 'mat-select'.
+1. If 'mat-select' is an Angular component and it has 'ngModel' input, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+
+ &lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [ERROR -&gt;][(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFo"): ng:///DynamicTestModule/FootballersListComponent.html@5:38
+Can't bind to 'value' since it isn't a known property of 'mat-option'.
+1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFor="let filter of filters" [ERROR -&gt;][value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat-option&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@6:49
+'mat-option' is not a known element:
+1. If 'mat-option' is an Angular component, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("older="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      [ERROR -&gt;]&lt;mat-option *ngFor="let filter of filters" [value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat"): ng:///DynamicTestModule/FootballersListComponent.html@6:6
+'mat-select' is not a known element:
+1. If 'mat-select' is an Angular component, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+ &lt;mat-form-field&gt;
+    [ERROR -&gt;]&lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterC"): ng:///DynamicTestModule/FootballersListComponent.html@5:4
+'mat-form-field' is not a known element:
+1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+
+ [ERROR -&gt;]&lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (sele"): ng:///DynamicTestModule/FootballersListComponent.html@4:1
+Can't bind to 'dataSource' since it isn't a known property of 'table'. ("
+
+&lt;div class="mat-elevation-z8"&gt;
+  &lt;table mat-table #table [ERROR -&gt;][dataSource]="dataSource"&gt;
+   
+ &lt;ng-container matColumnDef="id"&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@14:26
+The pipe 'ratingPipe' could not be found ("ment"&gt;   
+    &lt;ng-template ngFor let-item [ngForOf]="createRange(element.rating)" &gt;
+      &lt;span  cla[ERROR -&gt;]ss="{{ element.rating | ratingPipe}}" &gt;star &lt;/span&gt;
+
+    &lt;/ng-template&gt;&lt;/td&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@41:16
+Can't bind to 'matHeaderRowDef' since it isn't a known property of 'tr'. ("
+  &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row [ERROR -&gt;]*matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColu"): ng:///DynamicTestModule/FootballersListComponent.html@67:23
+Property binding matHeaderRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+  &lt;/ng-container&gt;
+
+    [ERROR -&gt;]&lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; col"): ng:///DynamicTestModule/FootballersListComponent.html@67:4
+Can't bind to 'matRowDefColumns' since it isn't a known property of 'tr'. ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row [ERROR -&gt;]*matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterRowDef="displ"): ng:///DynamicTestModule/FootballersListComponent.html@68:16
+Property binding matRowDefColumns not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterR"): ng:///DynamicTestModule/FootballersListComponent.html@68:4
+Can't bind to 'matFooterRowDef' since it isn't a known property of 'tr'. ("&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row [ERROR -&gt;]*matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:23
+Property binding matFooterRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". (""displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-footer-row *matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:4
+Can't bind to 'pageSizeOptions' since it isn't a known property of 'mat-paginator'.
+1. If 'mat-paginator' is an Angular component and it has 'pageSizeOptions' input, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+ 
+  &lt;/table&gt;
+  &lt;mat-paginator [ERROR -&gt;][pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:17
+'mat-paginator' is not a known element:
+1. If 'mat-paginator' is an Angular component, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+ 
+  &lt;/table&gt;
+  [ERROR -&gt;]&lt;mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:2
+parse@http://localhost:9876/_karma_webpack_/vendor.js:44208:80
+_parseTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53395:42
+_compileTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53382:37
+http://localhost:9876/_karma_webpack_/vendor.js:53325:78
+forEach@http://localhost:9876/_karma_webpack_/vendor.js:121201:12
+_compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:53325:26
+http://localhost:9876/_karma_webpack_/vendor.js:53243:37
+then@http://localhost:9876/_karma_webpack_/vendor.js:30402:79
+_compileModuleAndAllComponents@http://localhost:9876/_karma_webpack_/vendor.js:53241:30
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:53200:67
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:116653:65
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:117217:65
+compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:74367:65
+compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:74226:84
+http://localhost:9876/_karma_webpack_/main.js:242:29
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138831:45
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138403:47
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+runGuarded@http://localhost:9876/_karma_webpack_/vendor.js:139859:53
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138959:39
+http://localhost:9876/_karma_webpack_/vendor.js:138893:30
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138624:37
+http://localhost:9876/_karma_webpack_/vendor.js:138640:33
+execute@http://localhost:9876/_karma_webpack_/vendor.js:138732:46
+invokeTask@http://localhost:9876/_karma_webpack_/vendor.js:140129:36
+runTask@http://localhost:9876/_karma_webpack_/vendor.js:139896:57
+drainMicroTaskQueue@http://localhost:9876/_karma_webpack_/vendor.js:140303:42
+</failure>
+    <failure type="">Failed: Template parse errors:
+Can't bind to 'ngModel' since it isn't a known property of 'mat-select'.
+1. If 'mat-select' is an Angular component and it has 'ngModel' input, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+
+ &lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [ERROR -&gt;][(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFo"): ng:///DynamicTestModule/FootballersListComponent.html@5:38
+Can't bind to 'value' since it isn't a known property of 'mat-option'.
+1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFor="let filter of filters" [ERROR -&gt;][value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat-option&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@6:49
+'mat-option' is not a known element:
+1. If 'mat-option' is an Angular component, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("older="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      [ERROR -&gt;]&lt;mat-option *ngFor="let filter of filters" [value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat"): ng:///DynamicTestModule/FootballersListComponent.html@6:6
+'mat-select' is not a known element:
+1. If 'mat-select' is an Angular component, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+ &lt;mat-form-field&gt;
+    [ERROR -&gt;]&lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterC"): ng:///DynamicTestModule/FootballersListComponent.html@5:4
+'mat-form-field' is not a known element:
+1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+
+ [ERROR -&gt;]&lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (sele"): ng:///DynamicTestModule/FootballersListComponent.html@4:1
+Can't bind to 'dataSource' since it isn't a known property of 'table'. ("
+
+&lt;div class="mat-elevation-z8"&gt;
+  &lt;table mat-table #table [ERROR -&gt;][dataSource]="dataSource"&gt;
+   
+ &lt;ng-container matColumnDef="id"&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@14:26
+The pipe 'ratingPipe' could not be found ("ment"&gt;   
+    &lt;ng-template ngFor let-item [ngForOf]="createRange(element.rating)" &gt;
+      &lt;span  cla[ERROR -&gt;]ss="{{ element.rating | ratingPipe}}" &gt;star &lt;/span&gt;
+
+    &lt;/ng-template&gt;&lt;/td&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@41:16
+Can't bind to 'matHeaderRowDef' since it isn't a known property of 'tr'. ("
+  &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row [ERROR -&gt;]*matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColu"): ng:///DynamicTestModule/FootballersListComponent.html@67:23
+Property binding matHeaderRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+  &lt;/ng-container&gt;
+
+    [ERROR -&gt;]&lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; col"): ng:///DynamicTestModule/FootballersListComponent.html@67:4
+Can't bind to 'matRowDefColumns' since it isn't a known property of 'tr'. ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row [ERROR -&gt;]*matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterRowDef="displ"): ng:///DynamicTestModule/FootballersListComponent.html@68:16
+Property binding matRowDefColumns not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterR"): ng:///DynamicTestModule/FootballersListComponent.html@68:4
+Can't bind to 'matFooterRowDef' since it isn't a known property of 'tr'. ("&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row [ERROR -&gt;]*matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:23
+Property binding matFooterRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". (""displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-footer-row *matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:4
+Can't bind to 'pageSizeOptions' since it isn't a known property of 'mat-paginator'.
+1. If 'mat-paginator' is an Angular component and it has 'pageSizeOptions' input, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+ 
+  &lt;/table&gt;
+  &lt;mat-paginator [ERROR -&gt;][pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:17
+'mat-paginator' is not a known element:
+1. If 'mat-paginator' is an Angular component, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+ 
+  &lt;/table&gt;
+  [ERROR -&gt;]&lt;mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:2
+parse@http://localhost:9876/_karma_webpack_/vendor.js:44208:80
+_parseTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53395:42
+_compileTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53382:37
+http://localhost:9876/_karma_webpack_/vendor.js:53325:78
+forEach@http://localhost:9876/_karma_webpack_/vendor.js:121201:12
+_compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:53325:26
+http://localhost:9876/_karma_webpack_/vendor.js:53243:37
+then@http://localhost:9876/_karma_webpack_/vendor.js:30402:79
+_compileModuleAndAllComponents@http://localhost:9876/_karma_webpack_/vendor.js:53241:30
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:53197:72
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:116646:70
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:117214:64
+_initIfNeeded@http://localhost:9876/_karma_webpack_/vendor.js:74381:69
+createComponent@http://localhost:9876/_karma_webpack_/vendor.js:74577:27
+createComponent@http://localhost:9876/_karma_webpack_/vendor.js:74270:44
+http://localhost:9876/_karma_webpack_/main.js:255:56
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138831:45
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138403:47
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+runGuarded@http://localhost:9876/_karma_webpack_/vendor.js:139859:53
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138959:39
+http://localhost:9876/_karma_webpack_/vendor.js:138893:30
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138624:37
+http://localhost:9876/_karma_webpack_/vendor.js:138640:33
+</failure>
+  </testcase>
+  <testcase name="FootballServiceService should be created" time="0.12" classname="PhantomJS_2_1_1_(Windows_8_0_0).FootballServiceService">
+    <failure type="">Error: StaticInjectorError(DynamicTestModule)[FootballServiceService -&gt; HttpClient]: 
+  StaticInjectorError(Platform: core)[FootballServiceService -&gt; HttpClient]: 
+    NullInjectorError: No provider for HttpClient! in http://localhost:9876/_karma_webpack_/vendor.js (line 55727)
+get@http://localhost:9876/_karma_webpack_/vendor.js:55727:92
+resolveToken@http://localhost:9876/_karma_webpack_/vendor.js:55965:27
+tryResolveToken@http://localhost:9876/_karma_webpack_/vendor.js:55909:28
+get@http://localhost:9876/_karma_webpack_/vendor.js:55806:35
+resolveToken@http://localhost:9876/_karma_webpack_/vendor.js:55965:27
+tryResolveToken@http://localhost:9876/_karma_webpack_/vendor.js:55909:28
+get@http://localhost:9876/_karma_webpack_/vendor.js:55806:35
+resolveNgModuleDep@http://localhost:9876/_karma_webpack_/vendor.js:63041:32
+_createClass@http://localhost:9876/_karma_webpack_/vendor.js:63086:47
+_createProviderInstance@http://localhost:9876/_karma_webpack_/vendor.js:63058:38
+resolveNgModuleDep@http://localhost:9876/_karma_webpack_/vendor.js:63021:44
+get@http://localhost:9876/_karma_webpack_/vendor.js:63729:34
+get@http://localhost:9876/_karma_webpack_/vendor.js:74488:50
+http://localhost:9876/_karma_webpack_/vendor.js:74494:64
+map@[native code]
+execute@http://localhost:9876/_karma_webpack_/vendor.js:74494:32
+http://localhost:9876/_karma_webpack_/vendor.js:74646:52
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138627:37
+http://localhost:9876/_karma_webpack_/vendor.js:138642:33
+execute@http://localhost:9876/_karma_webpack_/vendor.js:138732:46
+execute@http://localhost:9876/_karma_webpack_/vendor.js:138732:46
+invokeTask@http://localhost:9876/_karma_webpack_/vendor.js:140129:36
+runTask@http://localhost:9876/_karma_webpack_/vendor.js:139896:57
+drainMicroTaskQueue@http://localhost:9876/_karma_webpack_/vendor.js:140303:42
+</failure>
+  </testcase>
+  <testcase name="FootballersListComponent should create" time="0.309" classname="PhantomJS_2_1_1_(Windows_8_0_0).FootballersListComponent">
+    <failure type="">Failed: Template parse errors:
+Can't bind to 'ngModel' since it isn't a known property of 'mat-select'.
+1. If 'mat-select' is an Angular component and it has 'ngModel' input, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+
+ &lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [ERROR -&gt;][(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFo"): ng:///DynamicTestModule/FootballersListComponent.html@5:38
+Can't bind to 'value' since it isn't a known property of 'mat-option'.
+1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFor="let filter of filters" [ERROR -&gt;][value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat-option&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@6:49
+'mat-option' is not a known element:
+1. If 'mat-option' is an Angular component, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("older="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      [ERROR -&gt;]&lt;mat-option *ngFor="let filter of filters" [value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat"): ng:///DynamicTestModule/FootballersListComponent.html@6:6
+'mat-select' is not a known element:
+1. If 'mat-select' is an Angular component, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+ &lt;mat-form-field&gt;
+    [ERROR -&gt;]&lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterC"): ng:///DynamicTestModule/FootballersListComponent.html@5:4
+'mat-form-field' is not a known element:
+1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+
+ [ERROR -&gt;]&lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (sele"): ng:///DynamicTestModule/FootballersListComponent.html@4:1
+Can't bind to 'dataSource' since it isn't a known property of 'table'. ("
+
+&lt;div class="mat-elevation-z8"&gt;
+  &lt;table mat-table #table [ERROR -&gt;][dataSource]="dataSource"&gt;
+   
+ &lt;ng-container matColumnDef="id"&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@14:26
+The pipe 'ratingPipe' could not be found ("ment"&gt;   
+    &lt;ng-template ngFor let-item [ngForOf]="createRange(element.rating)" &gt;
+      &lt;span  cla[ERROR -&gt;]ss="{{ element.rating | ratingPipe}}" &gt;star &lt;/span&gt;
+
+    &lt;/ng-template&gt;&lt;/td&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@41:16
+Can't bind to 'matHeaderRowDef' since it isn't a known property of 'tr'. ("
+  &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row [ERROR -&gt;]*matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColu"): ng:///DynamicTestModule/FootballersListComponent.html@67:23
+Property binding matHeaderRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+  &lt;/ng-container&gt;
+
+    [ERROR -&gt;]&lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; col"): ng:///DynamicTestModule/FootballersListComponent.html@67:4
+Can't bind to 'matRowDefColumns' since it isn't a known property of 'tr'. ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row [ERROR -&gt;]*matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterRowDef="displ"): ng:///DynamicTestModule/FootballersListComponent.html@68:16
+Property binding matRowDefColumns not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterR"): ng:///DynamicTestModule/FootballersListComponent.html@68:4
+Can't bind to 'matFooterRowDef' since it isn't a known property of 'tr'. ("&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row [ERROR -&gt;]*matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:23
+Property binding matFooterRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". (""displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-footer-row *matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:4
+Can't bind to 'pageSizeOptions' since it isn't a known property of 'mat-paginator'.
+1. If 'mat-paginator' is an Angular component and it has 'pageSizeOptions' input, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+ 
+  &lt;/table&gt;
+  &lt;mat-paginator [ERROR -&gt;][pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:17
+'mat-paginator' is not a known element:
+1. If 'mat-paginator' is an Angular component, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+ 
+  &lt;/table&gt;
+  [ERROR -&gt;]&lt;mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:2
+parse@http://localhost:9876/_karma_webpack_/vendor.js:44208:80
+_parseTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53395:42
+_compileTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53382:37
+http://localhost:9876/_karma_webpack_/vendor.js:53325:78
+forEach@http://localhost:9876/_karma_webpack_/vendor.js:121201:12
+_compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:53325:26
+http://localhost:9876/_karma_webpack_/vendor.js:53243:37
+then@http://localhost:9876/_karma_webpack_/vendor.js:30402:79
+_compileModuleAndAllComponents@http://localhost:9876/_karma_webpack_/vendor.js:53241:30
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:53200:67
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:116653:65
+compileModuleAndAllComponentsAsync@http://localhost:9876/_karma_webpack_/vendor.js:117217:65
+compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:74367:65
+compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:74226:84
+http://localhost:9876/_karma_webpack_/main.js:439:31
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138831:45
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138403:47
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+runGuarded@http://localhost:9876/_karma_webpack_/vendor.js:139859:53
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138959:39
+http://localhost:9876/_karma_webpack_/vendor.js:138893:30
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138624:37
+http://localhost:9876/_karma_webpack_/vendor.js:138640:33
+execute@http://localhost:9876/_karma_webpack_/vendor.js:138732:46
+execute@http://localhost:9876/_karma_webpack_/vendor.js:138732:46
+invokeTask@http://localhost:9876/_karma_webpack_/vendor.js:140129:36
+runTask@http://localhost:9876/_karma_webpack_/vendor.js:139896:57
+drainMicroTaskQueue@http://localhost:9876/_karma_webpack_/vendor.js:140303:42
+</failure>
+    <failure type="">Error: Template parse errors:
+Can't bind to 'ngModel' since it isn't a known property of 'mat-select'.
+1. If 'mat-select' is an Angular component and it has 'ngModel' input, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+
+ &lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [ERROR -&gt;][(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFo"): ng:///DynamicTestModule/FootballersListComponent.html@5:38
+Can't bind to 'value' since it isn't a known property of 'mat-option'.
+1. If 'mat-option' is an Angular component and it has 'value' input, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" name="food"  (selectionChange)="filterChange()" &gt;
+      &lt;mat-option *ngFor="let filter of filters" [ERROR -&gt;][value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat-option&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@6:49
+'mat-option' is not a known element:
+1. If 'mat-option' is an Angular component, then verify that it is part of this module.
+2. If 'mat-option' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("older="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterChange()" &gt;
+      [ERROR -&gt;]&lt;mat-option *ngFor="let filter of filters" [value]="filter.name"&gt;
+        {{filter.name}}
+      &lt;/mat"): ng:///DynamicTestModule/FootballersListComponent.html@6:6
+'mat-select' is not a known element:
+1. If 'mat-select' is an Angular component, then verify that it is part of this module.
+2. If 'mat-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+ &lt;mat-form-field&gt;
+    [ERROR -&gt;]&lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (selectionChange)="filterC"): ng:///DynamicTestModule/FootballersListComponent.html@5:4
+'mat-form-field' is not a known element:
+1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+
+
+ [ERROR -&gt;]&lt;mat-form-field&gt;
+    &lt;mat-select placeholder="Filters" [(ngModel)]="selectedValue" name="food"  (sele"): ng:///DynamicTestModule/FootballersListComponent.html@4:1
+Can't bind to 'dataSource' since it isn't a known property of 'table'. ("
+
+&lt;div class="mat-elevation-z8"&gt;
+  &lt;table mat-table #table [ERROR -&gt;][dataSource]="dataSource"&gt;
+   
+ &lt;ng-container matColumnDef="id"&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@14:26
+The pipe 'ratingPipe' could not be found ("ment"&gt;   
+    &lt;ng-template ngFor let-item [ngForOf]="createRange(element.rating)" &gt;
+      &lt;span  cla[ERROR -&gt;]ss="{{ element.rating | ratingPipe}}" &gt;star &lt;/span&gt;
+
+    &lt;/ng-template&gt;&lt;/td&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@41:16
+Can't bind to 'matHeaderRowDef' since it isn't a known property of 'tr'. ("
+  &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row [ERROR -&gt;]*matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColu"): ng:///DynamicTestModule/FootballersListComponent.html@67:23
+Property binding matHeaderRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+  &lt;/ng-container&gt;
+
+    [ERROR -&gt;]&lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; col"): ng:///DynamicTestModule/FootballersListComponent.html@67:4
+Can't bind to 'matRowDefColumns' since it isn't a known property of 'tr'. ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row [ERROR -&gt;]*matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterRowDef="displ"): ng:///DynamicTestModule/FootballersListComponent.html@68:16
+Property binding matRowDefColumns not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". ("
+
+    &lt;tr mat-header-row *matHeaderRowDef="displayedColumns"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row *matFooterR"): ng:///DynamicTestModule/FootballersListComponent.html@68:4
+Can't bind to 'matFooterRowDef' since it isn't a known property of 'tr'. ("&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    &lt;tr mat-footer-row [ERROR -&gt;]*matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:23
+Property binding matFooterRowDef not used by any directive on an embedded template. Make sure that the property name is spelled correctly and all directives are listed in the "@NgModule.declarations". (""displayedColumns"&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef="let row; columns: displayedColumns;"&gt;&lt;/tr&gt;
+    [ERROR -&gt;]&lt;tr mat-footer-row *matFooterRowDef="displayedColumns"&gt;&lt;/tr&gt;
+ 
+  &lt;/table&gt;
+"): ng:///DynamicTestModule/FootballersListComponent.html@69:4
+Can't bind to 'pageSizeOptions' since it isn't a known property of 'mat-paginator'.
+1. If 'mat-paginator' is an Angular component and it has 'pageSizeOptions' input, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("
+ 
+  &lt;/table&gt;
+  &lt;mat-paginator [ERROR -&gt;][pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:17
+'mat-paginator' is not a known element:
+1. If 'mat-paginator' is an Angular component, then verify that it is part of this module.
+2. If 'mat-paginator' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+ 
+  &lt;/table&gt;
+  [ERROR -&gt;]&lt;mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons&gt;&lt;/mat-paginator&gt;
+&lt;/div&gt;
+
+"): ng:///DynamicTestModule/FootballersListComponent.html@72:2 in http://localhost:9876/_karma_webpack_/vendor.js (line 44208)
+parse@http://localhost:9876/_karma_webpack_/vendor.js:44208:80
+_parseTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53395:42
+_compileTemplate@http://localhost:9876/_karma_webpack_/vendor.js:53382:37
+http://localhost:9876/_karma_webpack_/vendor.js:53325:78
+forEach@http://localhost:9876/_karma_webpack_/vendor.js:121201:12
+_compileComponents@http://localhost:9876/_karma_webpack_/vendor.js:53325:26
+http://localhost:9876/_karma_webpack_/vendor.js:53243:37
+then@http://localhost:9876/_karma_webpack_/vendor.js:30402:79
+_compileModuleAndAllComponents@http://localhost:9876/_karma_webpack_/vendor.js:53241:30
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:53197:72
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:116646:70
+compileModuleAndAllComponentsSync@http://localhost:9876/_karma_webpack_/vendor.js:117214:64
+_initIfNeeded@http://localhost:9876/_karma_webpack_/vendor.js:74381:69
+createComponent@http://localhost:9876/_karma_webpack_/vendor.js:74577:27
+createComponent@http://localhost:9876/_karma_webpack_/vendor.js:74270:44
+http://localhost:9876/_karma_webpack_/main.js:442:52
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138627:37
+http://localhost:9876/_karma_webpack_/vendor.js:138642:33
+</failure>
+    <failure type="">Expected undefined to be truthy.
+http://localhost:9876/_karma_webpack_/main.js:447:37
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140096:31
+onInvoke@http://localhost:9876/_karma_webpack_/vendor.js:138406:45
+invoke@http://localhost:9876/_karma_webpack_/vendor.js:140095:40
+run@http://localhost:9876/_karma_webpack_/vendor.js:139846:49
+runInTestZone@http://localhost:9876/_karma_webpack_/vendor.js:138627:37
+http://localhost:9876/_karma_webpack_/vendor.js:138642:33
+</failure>
+  </testcase>
+  <testcase name="RatingPipePipe create an instance" time="0.002" classname="PhantomJS_2_1_1_(Windows_8_0_0).RatingPipePipe"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
